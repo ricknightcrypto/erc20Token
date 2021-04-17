@@ -38,7 +38,7 @@ func GetCurrentContractBalance() {
 	// Wallet Address
 	address := common.HexToAddress("0xba7f8b5fb1b19c1211c5d49550fcd149177a5eaf")
   
-  // Calling BalanceOf function on token instance
+        // Calling BalanceOf function on token instance
 	bal, err := instance.BalanceOf(&bind.CallOpts{}, address)
 	if err != nil {
 		log.Fatal(err)
